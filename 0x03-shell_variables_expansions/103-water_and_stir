@@ -1,8 +1,2 @@
 #!/bin/bash
-water=$WATER
-stir=$STIR
-water10=$(echo "ibase=water; $water" | bc)
-stir10=$(echo "ibase=stir; $stir" | bc)
-result10=$(echo "$water10 + $stir10" | bc)
-result=$(echo "obase=bestchol; $result10" | bc)
-echo "The sum of WATER ($water) and STIR ($stir) is: $result in base bestchol"
+water=$WATER stir=$STIR water10=$(echo "ibase=water; $water" | bc) stir10=$(echo "ibase=stir; $stir" | bc) result10=$(echo "$water10 + $stir10" | bc) result=$(echo "obase=bestchol; $result10" | bc) echo "The sum of WATER ($water) and STIR ($stir) is: $result in base bestchol"
